@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>MediaCMS</Name>
+  <Repository>mediacms/mediacms:latest</Repository>
+  <Registry>https://hub.docker.com/r/mediacms/mediacms</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/mediacms-io/mediacms</Support>
+  <Project>https://mediacms.io</Project>
+  <Overview>Open source video CMS and platform</Overview>
+  <Category>Media:Video</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/pin00b/unraid_mediacms/main/icons/mediacms.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/pin00b/unraid_mediacms/main/templates/mediacms.xml</TemplateURL>
+  <Config Name="Web Port" Target="8000" Default="8888" Mode="tcp" Description="Port für Webinterface" Type="Port"/>
+  <Config Name="Media Volume" Target="/app/media" Default="/mnt/user/appdata/mediacms/media" Mode="rw" Description="Ort der Mediendateien" Type="Path"/>
+  <Config Name="Static Volume" Target="/app/static" Default="/mnt/user/appdata/mediacms/static" Mode="rw" Description="Statische Dateien" Type="Path"/>
+  <Config Name="Config Volume" Target="/app/config" Default="/mnt/user/appdata/mediacms/config" Mode="rw" Description="Konfigurationsdateien" Type="Path"/>
+</Container>
